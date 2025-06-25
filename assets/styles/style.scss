@@ -1,0 +1,61 @@
+:root {
+  --text-color: #f1f1f1;
+  --background-color: #1f1e1e;
+  --accent-color: #00ff80;
+  --h1-font-size: 2.25rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: "Inter";
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-color);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
